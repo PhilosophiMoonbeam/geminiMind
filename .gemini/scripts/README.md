@@ -10,7 +10,7 @@ A maintenance script designed to keep the project's task history and progress lo
 
 #### Workflow Integration
 
-This script is part of the **Project-Wide Development Workflow** (see `memory-bank/systemContext.md`). It should be run periodically (e.g., monthly or after major releases) to ensure the `tasks/` directory and `memory-bank/progress.md` remain focused on current and recent activities.
+This script is part of the **Project-Wide Development Workflow**. It should be run periodically (e.g., monthly or after major releases) to ensure the `tasks/` directory and `memory-bank/progress.md` remain focused on current and recent activities.
 
 #### Usage
 
@@ -41,10 +41,10 @@ python3 .gemini/scripts/prune_history.py [OPTIONS]
 
 #### Example
 
-Archive items older than 90 days:
+Archive items older than 14 days:
 
 ```bash
-python3 .gemini/scripts/prune_history.py --days 90
+python3 .gemini/scripts/prune_history.py --days 14
 ```
 
 Check what would be archived (dry run):
