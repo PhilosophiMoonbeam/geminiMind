@@ -2,7 +2,7 @@
   <img src="logo.jpg" alt="geminiFlow" width="350">
 </div>
 
-**geminiFlow** is a foundational setup for reliable, agentic [Gemini CLI](https://geminicli.com/) workflows. It provides a structured environment and pre-configured tools to jumpstart your AI-assisted development.
+**geminiMind** is a foundational setup for reliable, agentic [Gemini CLI](https://geminicli.com/) workflows. It provides a structured environment and pre-configured tools to jumpstart your AI-assisted development.
 
 > [!TIP]
 > **Start Here**: For deep operational details and the core workflow philosophy, please read [GEMINI.md](.gemini/GEMINI.md) first.
