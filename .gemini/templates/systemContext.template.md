@@ -13,15 +13,7 @@
 | :--- | :--- | :--- | :--- |
 | **`[Package Name]`** | `[Path]` | [Description] | [Dependencies] |
 
-## 2. Cognitive Architecture (System 2)
-
-[Description]
-
-| Component | Interface | Implementation | Responsibility |
-| :--- | :--- | :--- | :--- |
-| **[Component]** | `[Interface]` | `[Implementation]` | [Description] |
-
-## 3. Data Plane (Storage & Retrieval)
+## 2. Data Plane (Storage & Retrieval)
 
 ### Primary Store: [Technology]
 
