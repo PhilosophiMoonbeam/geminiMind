@@ -18,7 +18,6 @@ flowchart TD
     classDef decision fill:#fefce8,stroke:#eab308,stroke-width:2px,color:#000
     classDef artifact fill:#f0fdf4,stroke:#22c55e,stroke-width:2px,color:#000,stroke-dasharray: 5 5
     classDef config fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#000
-    classDef script fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#000
 
     %% Nodes
     subgraph Boot_Sequence ["🚀 Boot Sequence"]
@@ -57,10 +56,6 @@ flowchart TD
         Tasks[("📋 $TASKS\n- Active Task Files\n- Completed")]:::artifact
     end
 
-    subgraph Maintenance ["🧹 Maintenance"]
-        PruneScript[["🐍 prune_history.py\n(Archive Old Tasks)"]]:::script
-    end
-
     %% Data Flow
     Init -.-> MB
     Recon -.->|Read| MB
@@ -68,16 +63,10 @@ flowchart TD
     Persist -.->|Update| MB
     Persist -.->|Update| Tasks
     
-    %% Maintenance Flow
-    Tasks -.->|Periodic Pruning| PruneScript
-    MB -.->|Periodic Pruning| PruneScript
-    PruneScript -->|Moves to| Archive[/"📦 .gemini/archive"\]:::artifact
-
     %% Classes
     class Init,LoadCtx,Recon,Plan,Exec,Persist,AstGrep,Context7 process
-    class Templates,MB,Tasks,Archive artifact
+    class Templates,MB,Tasks artifact
     class Settings config
-    class PruneScript script
 ```
 
 ---
@@ -148,4 +137,3 @@ The `.gemini/` directory is the brain of this workflow:
 - **`GEMINI.md`**: The master system prompt and operational protocol.
 - **`settings.json`**: Tool and server configurations.
 - **`templates/`**: Standardized file templates for consistency.
-- **`scripts/`**: Utility scripts for maintenance and automation.

@@ -1,25 +1,28 @@
-# Product Context: [Project Name]
+# Product Context
 
-**Document Version:** 1.0
+**Version:** [Version] ([Date])
 **Status:** [Status]
 
-## 1. Problems Solved
+## 1. Value Proposition
 
-[Project Name] addresses the following challenges:
+[Description]
 
-*   **[Problem 1]:** [Description]
-*   **[Problem 2]:** [Description]
+### Core Problems Solved
 
-## 2. Product Goals
+1. **[Problem 1]**: [Description]
+2. **[Problem 2]**: [Description]
 
-The primary goals are:
+## 2. Key Capabilities
 
-*   **[Goal 1]:** [Description]
-*   **[Goal 2]:** [Description]
+### [Category 1]
 
-## 3. UX Rationale
+* **[Capability]**: [Description]
 
-The user experience is designed with [Target Audience] in mind:
+### [Category 2]
 
-*   **[Principle 1]:** [Description]
-*   **[Principle 2]:** [Description]
+* **[Capability]**: [Description]
+
+## 3. User Experience ([Persona])
+
+* **[Principle 1]**: [Description]
+* **[Principle 2]**: [Description]

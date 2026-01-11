@@ -1,23 +1,26 @@
 # Active Context
 
-## Current Session
+**Task**: [Task Name]
+**Current Focus**: [Current Focus]
+**Reference**: [Reference File]
 
-- **Goal**: [Session Goal]
+## Session State ([Date])
+
 - **Status**: [Status]
+- **Goal**: [Goal]
+- **Next Steps**:
+  - [Step 1]
+  - [Step 2]
 
-## Active Task
+## Recent Accomplishments
 
-- [Status] [OPEN/IN_PROGRESS/BLOCKED/DONE]
-- [Task] [Task Title]
-- [Focus] [Current Focus/Step]
+- **[Category]**:
+  - **[Item]**: [Description]
 
-## Recent Progress
+- **[Phase Name]**:
+  - **[Item]**:
+    - [Detail]
 
-- **[Status]**: [Description]
-    - [Detail 1]
-    - [Detail 2]
+## Active Tasks (Queued)
 
-## Next Steps
-
-1.  **[Step 1]**: [Description]
-2.  **[Step 2]**: [Description]
+- **[Task]**

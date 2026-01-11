@@ -1,56 +1,57 @@
 # System Context
 
-## Architecture & Design Patterns
+**Version:** [Version] ([Date])
+**Source of Truth:** [Path]
 
-### Architecture Style
+## 1. High-Level Architecture
 
-*   **[Style Name]:** [Description]
-*   **[Component 1]:** [Description]
-*   **[Component 2]:** [Description]
+[Description]
 
-### Key Design Patterns
+### Package Structure (Workspace)
 
-#### 1. [Pattern Name]
+| Package | Path | Responsibility | Dependencies |
+| :--- | :--- | :--- | :--- |
+| **`[Package Name]`** | `[Path]` | [Description] | [Dependencies] |
 
-- **Intent**: [Description]
-- **Structure**: [Description]
-- **Integration**: [Description]
+## 2. Cognitive Architecture (System 2)
 
-#### 2. [Pattern Name]
+[Description]
 
-- **Intent**: [Description]
-- **Structure**: [Description]
-- **Integration**: [Description]
+| Component | Interface | Implementation | Responsibility |
+| :--- | :--- | :--- | :--- |
+| **[Component]** | `[Interface]` | `[Implementation]` | [Description] |
 
-## Project-Wide Development Workflow
+## 3. Data Plane (Storage & Retrieval)
 
-### Workspace Management
-- **[Virtual Root/Environment]:** [Description]
-- **[Tooling]:** [Description]
+### Primary Store: [Technology]
 
-### Development Utilities
+[Description]
 
-- **Prune History Script**: `.gemini/scripts/prune_history.py`
-    - **Purpose**: Manage the growth of `tasks/completed/` and `memory-bank/progress.md` by archiving old entries.
-    - **Usage**: `.gemini/scripts/prune_history.py [--days DAYS] [--dry-run]`
-    - **Default**: Archives items older than 60 days to `.gemini/archive/`.
+* **[Feature]**: [Description]
 
-### Testing Strategy
-- **[Strategy]:** [Description]
+### Ephemeral Store: [Technology]
 
-## Technical Context
+[Description]
 
-### Stack & Modules
+* **[Feature]**: [Description]
 
-- **Language**: [Language & Version]
-- **Dependency Manager**: [Tool]
-- **Project Layout**: [Description]
+## 4. Key Design Patterns
 
-### External Services
+### [Category]
 
-- **[Service 1]:** [Description]
-- **[Service 2]:** [Description]
+* **[Pattern Name]**: [Description]
 
-### Environment & Config
+### [Category]
 
-- **[Config Aspect]:** [Description]
+* **[Pattern Name]**: [Description]
+
+## 5. Technology Stack
+
+* **Language**: [Language & Version]
+* **Workspace**: [Tool]
+* **Runtime**: [Runtime]
+* **Orchestration**: [Tool]
+* **Agents**: [Tool]
+* **Communication**: [Protocol]
+* **Database**: [Database]
+* **Observability**: [Tools]

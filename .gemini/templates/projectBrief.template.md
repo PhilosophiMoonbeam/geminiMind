@@ -1,47 +1,26 @@
-# Project Brief: [Project Name]
+# Project Brief
 
-**Document Version:** 1.0
-**Current Status:** [Status, e.g., Inception, Development, Production]
-**Based on specs/ Version:** [Version if applicable]
+**Project**: Metitect
+**Version**: [Version]
+**Mission**: [Mission Statement]
 
-## 1. Mission & Objective
+## Core Philosophy
 
-**MISSION**: [Brief, high-level mission statement]
+**"[Philosophy Name]"**: [Description]
 
-**Current State**: [Description of current state]
+## Key Architecture
 
-**Objective**: [Specific objectives for the current phase]
+* **[Component]**: [Description]
+* **[Component]**: [Description]
 
-## 2. Core Value Proposition
+## Architectural Mandates
 
-[Project Name] aims to deliver:
+1. **[Mandate 1]**: [Description]
 
-1.  **[Value Prop 1]:** [Description]
-2.  **[Value Prop 2]:** [Description]
-3.  **[Value Prop 3]:** [Description]
+2. **[Mandate 2]**: [Description]
 
-## 3. Core Scope
+## Success Criteria ([Version])
 
-### 3.1. Key Inclusions:
+1. **[Criterion 1]**: [Description]
 
-*   **[Feature/Area 1]:** [Description]
-*   **[Feature/Area 2]:** [Description]
-
-### 3.2. Future Roadmap:
-
-*   **[Future Feature 1]:** [Description]
-*   **[Future Feature 2]:** [Description]
-
-## 4. Key Deliverables & Functionality
-
-The project delivers:
-
-1.  [Deliverable 1]
-2.  [Deliverable 2]
-
-## 5. Core Requirements & Success Criteria
-
-The system is considered successful if it is:
-
-1.  **[Criteria 1]:** [Description]
-2.  **[Criteria 2]:** [Description]
+2. **[Criterion 2]**: [Description]

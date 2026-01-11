@@ -1,32 +1,23 @@
-# Progress
+# Progress Status
 
-## Phase [N]: [Phase Name]
-*   **Goal:** [Goal Description]
-*   **Status:** [OPEN/IN_PROGRESS/DONE]
-*   **Key Tasks:**
-    - [ ] **[Task 1]:** [Description]
-    - [ ] **[Task 2]:** [Description]
+**Phase:** [Phase Name]
+**Version:** [Version]
+**Date:** [YYYY-MM-DD]
 
-## Epics
-- [ ] **[Epic 1]**: [Description]
-- [ ] **[Epic 2]**: [Description]
+## Recent Achievements ([Date/Period])
 
-## Recent Milestones
-- **[YYYY-MM-DD]**: [Milestone Description]
-    - [Detail 1]
-    - [Detail 2]
+* **[Phase Name] (Completed)**:
+  * [x] **[Category]**:
+    * [x] **[Item]**: [Description]
+  * [x] **[Category]**:
+    * [x] **[Item]**: [Description]
 
-## Current Status
-- **Date**: [YYYY-MM-DD]
-- **Phase**: [Current Phase]
-- **Focus**: [Current Focus]
+## [Previous Phase Name] (Completed)
 
-## Active Tasks
-- [ ] `tasks/[task_file].md`: [Task Title]
+**Goal:** [Goal Description]
 
-## Backlog
-- [ ] [Backlog Item]
+* [x] **[Item]**: [Description]
 
-## Completed Tasks
+### Future
 
-- [x] `tasks/completed/[task_file].md`: [Task Title] ([YYYY-MM-DD])
+* [ ] **[Item]**: [Description]
