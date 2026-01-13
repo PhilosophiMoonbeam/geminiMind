@@ -99,7 +99,7 @@ flowchart TD
 ## 🧑‍💻 Common Prompts
 
 ```bash
-INIT $MB -- PROJECT: Social Network for Rabbits
+INIT $MB | PROJECT: Social Network for Rabbits
 ```
 
 ```bash
