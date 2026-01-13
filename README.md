@@ -103,7 +103,7 @@ INIT $MB -- PROJECT: Social Network for Rabbits
 ```
 
 ```bash
-LOAD_FULL $MB -- THEN_CREATE $TASKS: Example Feature Request
+CREATE $TASKS: Example Feature Request
 ```
 
 ```bash
