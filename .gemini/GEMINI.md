@@ -3,10 +3,10 @@
 ## 0. BOOT_SEQUENCE
 
 **VARS**: `$MB=./.memory-bank`, `$TASKS=./.tasks`, `$CTX=$MB/activeContext.md`
-**DEV_MODE**: GREENFIELD (Non-BW Compat).
+**MODE**: GREENFIELD (No-Compat).
 
 1. **INIT**: IF ABSENT `$MB`: **MKDIR** -> **CP** `.gemini/templates/*` `$MB/` -> **MV** `$MB/*.template.md` `$MB/*.md`. IF ABSENT `$TASKS`: **MKDIR**.
-2. **LOAD**: **READ** `$MB/projectBrief.md` `$MB/progress.md` `$MB/systemContext.md` `$CTX`.
+2. **LOAD**: **READ** `$MB/projectContext.md` `$MB/progress.md` `$MB/systemContext.md` `$CTX`.
 3. **ALIGN**: IF `$CTX` refs `task_id` -> **READ** `$TASKS/<task_id>.md`.
 
 ## 1. TASK_PROTOCOL (State Machine)
@@ -16,19 +16,19 @@
 
 ### PHASES & ACTIONS
 
-1. **DISCOVERY**: Context & Feasibility.
-   * **ARCH**: `delegate_to_agent` (Root Cause/Sys Design/Refactor).
-   * **MAP**: `list_directory` (Tree) / `glob` (File Loc).
-   * **CODE**: `find_code` (Symbol) > `dump_syntax_tree`/`test_match_code_rule` (Refine) > `find_code_by_rule` (Struct).
-   * **LIBS**: `resolve-library-id` -> `query-docs` (Validate usage).
-2. **SPEC**: Requirements & Docs.
-   * **DOCS**: `resolve-library-id` -> `query-docs` (Patterns/Examples).
-   * **PLAN**: **WRITE** detailed plan in `$TASKS/<id>.md` -> **UPDATE** `$CTX` ref.
-3. **IMPL**: Execution.
-   * **LOOP**: TDD -> `find_code` (Locate) -> `replace`/`write` (Edit).
-4. **VERIFY**: Quality Assurance.
-   * **TEST**: Run project tests. **NEVER** leave broken builds.
-   * **DEBUG**: On Fail -> `resolve-library-id` -> `query-docs` (Verify assumptions).
+1. **DISCOVERY**:
+   * **ARCH**: `delegate_to_agent` (codebase_investigator).
+   * **MAP**: `list_directory` | `glob`.
+   * **CODE**: `find_code` (Simple) > `dump_syntax_tree` > `find_code_by_rule` (Complex/Struct).
+   * **LIBS**: `resolve-library-id` -> `query-docs`.
+2. **SPEC**:
+   * **DOCS**: `resolve-library-id` -> `query-docs`.
+   * **PLAN**: **WRITE** detailed plan in `$TASKS/<id>.md` -> **UPDATE** `$CTX`.
+3. **IMPL**:
+   * **LOOP**: TDD -> `find_code` -> `replace`/`write`.
+4. **VERIFY**:
+   * **TEST**: Run project tests.
+   * **DEBUG**: On Fail -> `resolve-library-id` -> `query-docs`.
 
 ### TRANSITIONS
 
@@ -40,7 +40,7 @@
 
 1. **SYNC**: **READ** `$CTX`. Check Phase.
 2. **STRATEGY**:
-   * **AMBIGUOUS**? -> **STOP** -> **ASK** User.
+   * **AMBIGUOUS**? -> **STOP** -> **ASK**.
    * **PHASE_MISMATCH**? -> **UPDATE** `$CTX` -> **GOTO** 1.
    * **EXECUTE**: Perform Phase Action (Sec 1).
-3. **PERSIST**: Update `$CTX` (Current Focus). Chat=Ephemeral, Files=Persistent.
+3. **PERSIST**: Update `$CTX` (Current Focus).
